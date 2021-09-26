@@ -11,6 +11,9 @@
 		CE69D93626F78B180025AA3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69D93526F78B180025AA3B /* SceneDelegate.swift */; };
 		CE69D93D26F78B190025AA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69D93C26F78B190025AA3B /* Assets.xcassets */; };
 		CE69D94026F78B190025AA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE69D93E26F78B190025AA3B /* LaunchScreen.storyboard */; };
+		CE9677EA270088310093E683 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9677E9270088310093E683 /* RegistrationViewController.swift */; };
+		CE9677EC270088580093E683 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9677EB270088580093E683 /* RegistrationPresenter.swift */; };
+		CE9677EE2700886F0093E683 /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9677ED2700886F0093E683 /* RegistrationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		CE69D93C26F78B190025AA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE69D93F26F78B190025AA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE69D94126F78B190025AA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9677E9270088310093E683 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		CE9677EB270088580093E683 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		CE9677ED2700886F0093E683 /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,16 @@
 				CEE9D20626F78EB4001DF937 /* App */,
 			);
 			path = "e-commerce";
+			sourceTree = "<group>";
+		};
+		CE9677E82700873C0093E683 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				CE9677E9270088310093E683 /* RegistrationViewController.swift */,
+				CE9677EB270088580093E683 /* RegistrationPresenter.swift */,
+				CE9677ED2700886F0093E683 /* RegistrationModel.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		CEE9D20626F78EB4001DF937 /* App */ = {
@@ -121,6 +137,7 @@
 		CEE9D20D26F78F3C001DF937 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				CE9677E82700873C0093E683 /* Registration */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -194,8 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9677EA270088310093E683 /* RegistrationViewController.swift in Sources */,
+				CE9677EC270088580093E683 /* RegistrationPresenter.swift in Sources */,
 				CE69D93426F78B180025AA3B /* AppDelegate.swift in Sources */,
 				CE69D93626F78B180025AA3B /* SceneDelegate.swift in Sources */,
+				CE9677EE2700886F0093E683 /* RegistrationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
