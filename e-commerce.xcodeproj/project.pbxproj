@@ -21,7 +21,27 @@
 		CE9678012700C2370093E683 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9678002700C2370093E683 /* AuthRequestFactory.swift */; };
 		CE9678032700C2870093E683 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9678022700C2870093E683 /* Auth.swift */; };
 		CE9678052700C5CB0093E683 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9678042700C5CB0093E683 /* RequestFactory.swift */; };
+		CE9D2F60270614B200E29215 /* e_commerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2F5F270614B200E29215 /* e_commerceTests.swift */; };
+		CE9D2F6E270614C200E29215 /* e_commerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2F6D270614C200E29215 /* e_commerceUITests.swift */; };
+		CE9D2F762706173C00E29215 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9D2F62270614B200E29215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE69D92826F78B180025AA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE69D92F26F78B180025AA3B;
+			remoteInfo = "e-commerce";
+		};
+		CE9D2F70270614C200E29215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE69D92826F78B180025AA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE69D92F26F78B180025AA3B;
+			remoteInfo = "e-commerce";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CE69D93026F78B180025AA3B /* e-commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +59,13 @@
 		CE9678002700C2370093E683 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		CE9678022700C2870093E683 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		CE9678042700C5CB0093E683 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		CE9D2F5D270614B200E29215 /* e-commerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "e-commerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D2F5F270614B200E29215 /* e_commerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_commerceTests.swift; sourceTree = "<group>"; };
+		CE9D2F61270614B200E29215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9D2F6B270614C200E29215 /* e-commerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "e-commerceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D2F6D270614C200E29215 /* e_commerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_commerceUITests.swift; sourceTree = "<group>"; };
+		CE9D2F6F270614C200E29215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +77,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9D2F5A270614B200E29215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D2F68270614C200E29215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				CE69D93226F78B180025AA3B /* e-commerce */,
+				CE9D2F5E270614B200E29215 /* e-commerceTests */,
+				CE9D2F6C270614C200E29215 /* e-commerceUITests */,
 				CE69D93126F78B180025AA3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				CE69D93026F78B180025AA3B /* e-commerce.app */,
+				CE9D2F5D270614B200E29215 /* e-commerceTests.xctest */,
+				CE9D2F6B270614C200E29215 /* e-commerceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +144,25 @@
 				CE9678042700C5CB0093E683 /* RequestFactory.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CE9D2F5E270614B200E29215 /* e-commerceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D2F5F270614B200E29215 /* e_commerceTests.swift */,
+				CE9D2F61270614B200E29215 /* Info.plist */,
+				CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */,
+			);
+			path = "e-commerceTests";
+			sourceTree = "<group>";
+		};
+		CE9D2F6C270614C200E29215 /* e-commerceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D2F6D270614C200E29215 /* e_commerceUITests.swift */,
+				CE9D2F6F270614C200E29215 /* Info.plist */,
+			);
+			path = "e-commerceUITests";
 			sourceTree = "<group>";
 		};
 		CEE9D20626F78EB4001DF937 /* App */ = {
@@ -193,6 +257,42 @@
 			productReference = CE69D93026F78B180025AA3B /* e-commerce.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CE9D2F5C270614B200E29215 /* e-commerceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9D2F66270614B200E29215 /* Build configuration list for PBXNativeTarget "e-commerceTests" */;
+			buildPhases = (
+				CE9D2F59270614B200E29215 /* Sources */,
+				CE9D2F5A270614B200E29215 /* Frameworks */,
+				CE9D2F5B270614B200E29215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9D2F63270614B200E29215 /* PBXTargetDependency */,
+			);
+			name = "e-commerceTests";
+			productName = "e-commerceTests";
+			productReference = CE9D2F5D270614B200E29215 /* e-commerceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE9D2F6A270614C200E29215 /* e-commerceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9D2F72270614C200E29215 /* Build configuration list for PBXNativeTarget "e-commerceUITests" */;
+			buildPhases = (
+				CE9D2F67270614C200E29215 /* Sources */,
+				CE9D2F68270614C200E29215 /* Frameworks */,
+				CE9D2F69270614C200E29215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9D2F71270614C200E29215 /* PBXTargetDependency */,
+			);
+			name = "e-commerceUITests";
+			productName = "e-commerceUITests";
+			productReference = CE9D2F6B270614C200E29215 /* e-commerceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +304,14 @@
 				TargetAttributes = {
 					CE69D92F26F78B180025AA3B = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					CE9D2F5C270614B200E29215 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CE69D92F26F78B180025AA3B;
+					};
+					CE9D2F6A270614C200E29215 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CE69D92F26F78B180025AA3B;
 					};
 				};
 			};
@@ -224,6 +332,8 @@
 			projectRoot = "";
 			targets = (
 				CE69D92F26F78B180025AA3B /* e-commerce */,
+				CE9D2F5C270614B200E29215 /* e-commerceTests */,
+				CE9D2F6A270614C200E29215 /* e-commerceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +345,20 @@
 			files = (
 				CE69D94026F78B190025AA3B /* LaunchScreen.storyboard in Resources */,
 				CE69D93D26F78B190025AA3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D2F5B270614B200E29215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D2F69270614C200E29215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +383,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9D2F59270614B200E29215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D2F60270614B200E29215 /* e_commerceTests.swift in Sources */,
+				CE9D2F762706173C00E29215 /* ResponseCodableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D2F67270614C200E29215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D2F6E270614C200E29215 /* e_commerceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9D2F63270614B200E29215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE69D92F26F78B180025AA3B /* e-commerce */;
+			targetProxy = CE9D2F62270614B200E29215 /* PBXContainerItemProxy */;
+		};
+		CE9D2F71270614C200E29215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE69D92F26F78B180025AA3B /* e-commerce */;
+			targetProxy = CE9D2F70270614C200E29215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE69D93E26F78B190025AA3B /* LaunchScreen.storyboard */ = {
@@ -425,6 +579,80 @@
 			};
 			name = Release;
 		};
+		CE9D2F64270614B200E29215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "e-commerceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.HomeWork-Swift-molkovd.e-commerceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/e-commerce.app/e-commerce";
+			};
+			name = Debug;
+		};
+		CE9D2F65270614B200E29215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "e-commerceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.HomeWork-Swift-molkovd.e-commerceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/e-commerce.app/e-commerce";
+			};
+			name = Release;
+		};
+		CE9D2F73270614C200E29215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "e-commerceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.HomeWork-Swift-molkovd.e-commerceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "e-commerce";
+			};
+			name = Debug;
+		};
+		CE9D2F74270614C200E29215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "e-commerceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.HomeWork-Swift-molkovd.e-commerceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "e-commerce";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -442,6 +670,24 @@
 			buildConfigurations = (
 				CE69D94526F78B190025AA3B /* Debug */,
 				CE69D94626F78B190025AA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9D2F66270614B200E29215 /* Build configuration list for PBXNativeTarget "e-commerceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D2F64270614B200E29215 /* Debug */,
+				CE9D2F65270614B200E29215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9D2F72270614C200E29215 /* Build configuration list for PBXNativeTarget "e-commerceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D2F73270614C200E29215 /* Debug */,
+				CE9D2F74270614C200E29215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
