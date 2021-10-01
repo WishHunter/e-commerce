@@ -28,5 +28,10 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    
+    func makeCatalogRequestFactory() -> CatalogRequestFactory {
+        let errorParser = makeErrorParser()
+        return LoadCatalog(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
 
