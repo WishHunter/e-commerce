@@ -14,7 +14,7 @@
 		CE7785C42707843F00515D0F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7785C32707843F00515D0F /* Product.swift */; };
 		CE7785C6270785D100515D0F /* CatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7785C5270785D100515D0F /* CatalogRequestFactory.swift */; };
 		CE7785C82707878000515D0F /* LoadCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7785C72707878000515D0F /* LoadCatalog.swift */; };
-		CE7785CA2707920000515D0F /* GetCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7785C92707920000515D0F /* GetCatalogTests.swift */; };
+		CE7785CA2707920000515D0F /* GetRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7785C92707920000515D0F /* GetRequestsTests.swift */; };
 		CE9677F127008F4C0093E683 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE9677F027008F4C0093E683 /* Alamofire */; };
 		CE9677F427008FC90093E683 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9677F327008FC90093E683 /* AbstractErrorParser.swift */; };
 		CE9677F627008FF60093E683 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9677F527008FF60093E683 /* ErrorParser.swift */; };
@@ -57,7 +57,7 @@
 		CE7785C32707843F00515D0F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CE7785C5270785D100515D0F /* CatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRequestFactory.swift; sourceTree = "<group>"; };
 		CE7785C72707878000515D0F /* LoadCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCatalog.swift; sourceTree = "<group>"; };
-		CE7785C92707920000515D0F /* GetCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogTests.swift; sourceTree = "<group>"; };
+		CE7785C92707920000515D0F /* GetRequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestsTests.swift; sourceTree = "<group>"; };
 		CE9677F327008FC90093E683 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
 		CE9677F527008FF60093E683 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		CE9677F72700901C0093E683 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				CE9D2F5F270614B200E29215 /* e_commerceTests.swift */,
 				CE9D2F61270614B200E29215 /* Info.plist */,
 				CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */,
-				CE7785C92707920000515D0F /* GetCatalogTests.swift */,
+				CE7785C92707920000515D0F /* GetRequestsTests.swift */,
 			);
 			path = "e-commerceTests";
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 			files = (
 				CE9D2F60270614B200E29215 /* e_commerceTests.swift in Sources */,
 				CE9D2F762706173C00E29215 /* ResponseCodableTests.swift in Sources */,
-				CE7785CA2707920000515D0F /* GetCatalogTests.swift in Sources */,
+				CE7785CA2707920000515D0F /* GetRequestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
