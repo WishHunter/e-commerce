@@ -53,6 +53,8 @@ class GetRequestsTests: XCTestCase {
     
     func testLoadProduct() {
         let auth = Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+        
+        auth.baseUrl = URL(string: "https://protected-coast-09329.herokuapp.com/auth")!
 
         auth.login(userName: "Somebody", password: "mypassword") {[weak self] response in
             switch response.result {

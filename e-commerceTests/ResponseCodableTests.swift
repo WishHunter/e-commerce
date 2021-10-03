@@ -31,7 +31,7 @@ struct ErrorParserStub: AbstractErrorParser {
 }
 
 class ResponseCodableTests: XCTestCase {
-    let expectation = XCTestExpectation(description: "Download https://jsonplaceholder.typicode.com/posts/1")
+    let expectation = XCTestExpectation(description: "Download https://protected-coast-09329.herokuapp.com/auth")
     var errorParser: ErrorParserStub!
 
     override func setUpWithError() throws {
@@ -44,7 +44,7 @@ class ResponseCodableTests: XCTestCase {
     
     func testShouldDownloadAndParse() {
             AF
-                .request("https://jsonplaceholder.typicode.com/posts/1")
+                .request("https://protected-coast-09329.herokuapp.com/auth")
                 .responseCodable(errorParser: errorParser) { [weak self] (response: AFDataResponse<PostStub>) in
                     switch response.result {
                     case .success(_): break
