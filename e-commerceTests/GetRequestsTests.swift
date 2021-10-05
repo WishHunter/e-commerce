@@ -35,10 +35,10 @@ class GetRequestsTests: XCTestCase {
         sessionQueue = nil
         commonSession = nil
     }
-    
+
     func testLoadCatalog() {
         let catalog = LoadCatalog(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
-        
+
         catalog.getCatalog(pageNumber: 1) {[weak self] response in
             switch response.result {
             case .success(_):
@@ -50,13 +50,43 @@ class GetRequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 10.0)
     }
-    
-    func testLoadProduct() {
+
+    func testAuth() {
         let auth = Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
-        
+
         auth.baseUrl = URL(string: "https://protected-coast-09329.herokuapp.com/auth")!
 
         auth.login(userName: "Somebody", password: "mypassword") {[weak self] response in
+            switch response.result {
+            case .success(_):
+                break
+            case .failure(_):
+                XCTFail()
+            }
+            self?.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
+    }
+
+    func testAddReview() {
+        let review = AddReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+
+        review.addReview(idUser: 123, comment: "Some review") {[weak self] response in
+            switch response.result {
+            case .success(_):
+                break
+            case .failure(_):
+                XCTFail()
+            }
+            self?.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
+    }
+
+    func testRemoveReview() {
+        let review = RemoveReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+
+        review.removeReview(idComment: 123) {[weak self] response in
             switch response.result {
             case .success(_):
                 break

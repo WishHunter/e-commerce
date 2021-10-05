@@ -1,18 +1,18 @@
 //
-//  Auth.swift
+//  AddReview.swift
 //  e-commerce
 //
-//  Created by Denis Molkov on 26.09.2021.
+//  Created by Denis Molkov on 05.10.2021.
 //
 
 import Foundation
 import Alamofire
 
-class Auth: AbstractRequestFactory {
+class AddReview: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    var baseUrl = URL(
+    let baseUrl = URL(
         string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
 
     init(errorParser: AbstractErrorParser,
@@ -24,24 +24,26 @@ class Auth: AbstractRequestFactory {
     }
 }
 
-extension Auth: AuthRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
+extension AddReview: AddReviewRequestFactory {
+    func addReview(idUser: Int,
+                   comment: String,
+                   completionHandler: @escaping (AFDataResponse<AddReviewResult>) -> Void) {
+        let requestModel = AddReviewRequest(baseUrl: baseUrl, idUser: idUser, comment: comment)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension Auth {
-    struct Login: RequestRouter {
+extension AddReview {
+    struct AddReviewRequest: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "login.json"
-        let login: String
-        let password: String
+        let path: String = "addReview.json"
+        let idUser: Int
+        let comment: String
         var parameters: Parameters? {
             return [
-                "username": login,
-                "password": password
+                "id_user": idUser,
+                "text": comment
             ]
         }
     }

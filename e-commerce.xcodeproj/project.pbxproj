@@ -25,9 +25,14 @@
 		CE9678012700C2370093E683 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9678002700C2370093E683 /* AuthRequestFactory.swift */; };
 		CE9678032700C2870093E683 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9678022700C2870093E683 /* Auth.swift */; };
 		CE9678052700C5CB0093E683 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9678042700C5CB0093E683 /* RequestFactory.swift */; };
-		CE9D2F60270614B200E29215 /* e_commerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2F5F270614B200E29215 /* e_commerceTests.swift */; };
 		CE9D2F6E270614C200E29215 /* e_commerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2F6D270614C200E29215 /* e_commerceUITests.swift */; };
 		CE9D2F762706173C00E29215 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */; };
+		CEA5C3E3270CC7F400304370 /* AddReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5C3E2270CC7F400304370 /* AddReviewRequestFactory.swift */; };
+		CEA5C3E5270CC86900304370 /* AddReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5C3E4270CC86900304370 /* AddReviewResult.swift */; };
+		CEA5C3E7270CC8E800304370 /* RemoveReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5C3E6270CC8E800304370 /* RemoveReviewResult.swift */; };
+		CEA5C3E9270CC91100304370 /* RemoveReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5C3E8270CC91100304370 /* RemoveReviewRequestFactory.swift */; };
+		CEA5C3EB270CC95500304370 /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5C3EA270CC95500304370 /* AddReview.swift */; };
+		CEA5C3ED270CCA5200304370 /* RemoveReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5C3EC270CCA5200304370 /* RemoveReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,12 +73,17 @@
 		CE9678022700C2870093E683 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		CE9678042700C5CB0093E683 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		CE9D2F5D270614B200E29215 /* e-commerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "e-commerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9D2F5F270614B200E29215 /* e_commerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_commerceTests.swift; sourceTree = "<group>"; };
 		CE9D2F61270614B200E29215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9D2F6B270614C200E29215 /* e-commerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "e-commerceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D2F6D270614C200E29215 /* e_commerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_commerceUITests.swift; sourceTree = "<group>"; };
 		CE9D2F6F270614C200E29215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		CEA5C3E2270CC7F400304370 /* AddReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewRequestFactory.swift; sourceTree = "<group>"; };
+		CEA5C3E4270CC86900304370 /* AddReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewResult.swift; sourceTree = "<group>"; };
+		CEA5C3E6270CC8E800304370 /* RemoveReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReviewResult.swift; sourceTree = "<group>"; };
+		CEA5C3E8270CC91100304370 /* RemoveReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReviewRequestFactory.swift; sourceTree = "<group>"; };
+		CEA5C3EA270CC95500304370 /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
+		CEA5C3EC270CCA5200304370 /* RemoveReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +162,10 @@
 				CE9678042700C5CB0093E683 /* RequestFactory.swift */,
 				CE7785C5270785D100515D0F /* CatalogRequestFactory.swift */,
 				CE7785C72707878000515D0F /* LoadCatalog.swift */,
+				CEA5C3E2270CC7F400304370 /* AddReviewRequestFactory.swift */,
+				CEA5C3E8270CC91100304370 /* RemoveReviewRequestFactory.swift */,
+				CEA5C3EA270CC95500304370 /* AddReview.swift */,
+				CEA5C3EC270CCA5200304370 /* RemoveReview.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -159,7 +173,6 @@
 		CE9D2F5E270614B200E29215 /* e-commerceTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D2F5F270614B200E29215 /* e_commerceTests.swift */,
 				CE9D2F61270614B200E29215 /* Info.plist */,
 				CE9D2F752706173C00E29215 /* ResponseCodableTests.swift */,
 				CE7785C92707920000515D0F /* GetRequestsTests.swift */,
@@ -228,6 +241,8 @@
 				CE9677FB2700C0F60093E683 /* LoginResult.swift */,
 				CE9677FD2700C12C0093E683 /* User.swift */,
 				CE7785C32707843F00515D0F /* Product.swift */,
+				CEA5C3E4270CC86900304370 /* AddReviewResult.swift */,
+				CEA5C3E6270CC8E800304370 /* RemoveReviewResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -256,6 +271,7 @@
 				CE69D92C26F78B180025AA3B /* Sources */,
 				CE69D92D26F78B180025AA3B /* Frameworks */,
 				CE69D92E26F78B180025AA3B /* Resources */,
+				CEA5C3F1270CD11500304370 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -376,23 +392,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CEA5C3F1270CD11500304370 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE69D92C26F78B180025AA3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA5C3E9270CC91100304370 /* RemoveReviewRequestFactory.swift in Sources */,
+				CEA5C3E3270CC7F400304370 /* AddReviewRequestFactory.swift in Sources */,
 				CE9678052700C5CB0093E683 /* RequestFactory.swift in Sources */,
 				CE69D93426F78B180025AA3B /* AppDelegate.swift in Sources */,
 				CE9677FC2700C0F60093E683 /* LoginResult.swift in Sources */,
+				CEA5C3EB270CC95500304370 /* AddReview.swift in Sources */,
 				CE9677F427008FC90093E683 /* AbstractErrorParser.swift in Sources */,
+				CEA5C3E7270CC8E800304370 /* RemoveReviewResult.swift in Sources */,
 				CE7785C82707878000515D0F /* LoadCatalog.swift in Sources */,
 				CE9677F627008FF60093E683 /* ErrorParser.swift in Sources */,
 				CE9677FE2700C12C0093E683 /* User.swift in Sources */,
 				CE9678032700C2870093E683 /* Auth.swift in Sources */,
 				CE9678012700C2370093E683 /* AuthRequestFactory.swift in Sources */,
+				CEA5C3E5270CC86900304370 /* AddReviewResult.swift in Sources */,
 				CE69D93626F78B180025AA3B /* SceneDelegate.swift in Sources */,
 				CE9677F82700901C0093E683 /* DataRequest.swift in Sources */,
 				CE9677FA2700C0400093E683 /* RequestRouter.swift in Sources */,
+				CEA5C3ED270CCA5200304370 /* RemoveReview.swift in Sources */,
 				CE7785C6270785D100515D0F /* CatalogRequestFactory.swift in Sources */,
 				CE7785C42707843F00515D0F /* Product.swift in Sources */,
 			);
@@ -402,7 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9D2F60270614B200E29215 /* e_commerceTests.swift in Sources */,
 				CE9D2F762706173C00E29215 /* ResponseCodableTests.swift in Sources */,
 				CE7785CA2707920000515D0F /* GetRequestsTests.swift in Sources */,
 			);
