@@ -1,18 +1,18 @@
 //
-//  Auth.swift
+//  RemoveReview.swift
 //  e-commerce
 //
-//  Created by Denis Molkov on 26.09.2021.
+//  Created by Denis Molkov on 05.10.2021.
 //
 
 import Foundation
 import Alamofire
 
-class Auth: AbstractRequestFactory {
+class RemoveReview: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    var baseUrl = URL(
+    let baseUrl = URL(
         string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
 
     init(errorParser: AbstractErrorParser,
@@ -24,24 +24,22 @@ class Auth: AbstractRequestFactory {
     }
 }
 
-extension Auth: AuthRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
+extension RemoveReview: RemoveReviewRequestFactory {
+    func removeReview(idComment: Int, completionHandler: @escaping (AFDataResponse<RemoveReviewResult>) -> Void) {
+        let requestModel = RemoveReviewRequest(baseUrl: baseUrl, idComment: idComment)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension Auth {
-    struct Login: RequestRouter {
+extension RemoveReview {
+    struct RemoveReviewRequest: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .get
-        let path: String = "login.json"
-        let login: String
-        let password: String
+        let path: String = "removeReview.json"
+        let idComment: Int
         var parameters: Parameters? {
             return [
-                "username": login,
-                "password": password
+                "id_comment": idComment
             ]
         }
     }

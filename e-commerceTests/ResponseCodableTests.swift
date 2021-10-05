@@ -24,7 +24,6 @@ struct ErrorParserStub: AbstractErrorParser {
     func parse(_ result: Error) -> Error {
         return ApiErrorStub.fatalError
     }
-    
     func parse(response: HTTPURLResponse?, data: Data?, error: Error?) -> Error? {
         return error
     }
@@ -41,7 +40,7 @@ class ResponseCodableTests: XCTestCase {
     override func tearDownWithError() throws {
         errorParser = nil
     }
-    
+
     func testShouldDownloadAndParse() {
             AF
                 .request("https://protected-coast-09329.herokuapp.com/auth")
@@ -55,6 +54,4 @@ class ResponseCodableTests: XCTestCase {
             }
             wait(for: [expectation], timeout: 10.0)
         }
-
-
 }
