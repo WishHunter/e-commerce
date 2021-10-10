@@ -10,6 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     let requestFactory = RequestFactory()
+    let apiFactory = APIFactory()
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -17,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let catalog = requestFactory.makeCatalogRequestFactory()
         let addReview = requestFactory.addReviewRequestFactory()
         let removeReview = requestFactory.removeReviewRequestFactory()
+        let addToBasket = requestFactory.addToBasketRequestFactory()
+        let deleteFromBasket = requestFactory.deleteFromBasketRequestFactory()
+        
+        let payBasket = apiFactory.payBusket()
 
         auth.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
@@ -53,6 +58,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
+
+        addToBasket.addToBasket(idProduct: 123, quantity: 1) { response in
+                switch response.result {
+                case .success(let answer):
+                    print(answer.result)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+        }
+
+        deleteFromBasket.deleteFromBasket(idProduct: 123) { response in
+            switch response.result {
+            case .success(let answer):
+                print(answer.result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+
+        payBasket.payBasket()
+
         return true
     }
 
